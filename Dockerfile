@@ -66,7 +66,7 @@ RUN wp --info
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Define mountable directories.
-VOLUME ["/var/www/html","/var/log/nginx/"]
+VOLUME ["/app/","/var/log/nginx/"]
 
 # private expose
 EXPOSE 80
